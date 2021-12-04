@@ -15,7 +15,7 @@ const App = () => {
   const [name,setName] = useState('')
 
   const connect = () =>{
-    socket.current = new WebSocket('ws://localhost:8080')
+    socket.current = new WebSocket('ws://chat-app-kirill.herokuapp.com/')
     
       socket.current.onopen = () => {
           setConnected(true)
